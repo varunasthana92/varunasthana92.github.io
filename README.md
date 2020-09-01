@@ -22,7 +22,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <!-- <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar"> -->
-          <img src="/images/profile_2.jpeg" style="width:100%" alt="Avatar">
+          <img src="/images/profile_2.jpeg" style="height:80%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h2>Varun Asthana</h2>
           </div>
@@ -36,7 +36,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>C++ | Python | Computer Vision | Tensorflow</p>
+          <p>C++ | Python | Computer Vision | OpenCV | Tensorflow | ROS | MATLAB | Siemens NX9 | Teamcenter 10 | AutoCAD</p>
           <!-- <div class="w3-light-grey w3-round-xlarge w3-small"> -->
             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div> -->
           <!-- </div> -->
