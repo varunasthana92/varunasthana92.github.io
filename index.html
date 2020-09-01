@@ -9,6 +9,27 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -99,11 +120,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <div class="w3-row">
             <div class="w3-half">
-              <img src="/images/lane_detection.jpg" style="width:100%">
+              <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
+                <img src="/images/lane_detection.jpg" style="width:80%">
+              </a> 
             </div>
             <div class="w3-half">
-              <h3> Lane Detection</h3>
-              <p>Objective of the project is to detect the drive lane on the given data set (a video)</p>
+              <a href="https://github.com/varunasthana92/Lane_Detection" title="Go to project" target="_blank">
+                <h3>Lane Detection</h3>
+              </a>
+              <p>Objective of the project is to detect the current drive lane on the given data set (a video). Color segmentation done to generate a binary image. Sliding window used along the height of the image to detect all the points of left and right lanes.</p>
             </div>
           </div>
         </div>
