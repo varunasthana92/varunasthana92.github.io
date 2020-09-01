@@ -29,9 +29,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Robotics Graduate Student<br>
-          <p style="margin-left: 40px">University of Maryland-College Park</p>
-          </p>
+          <p style="margin-left: 40px"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Robotics Graduate Student,University of Maryland-College Park</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>College Park, MD, USA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>varunasthana92@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1-(240)-463-9878</p>
