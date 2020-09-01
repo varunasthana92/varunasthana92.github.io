@@ -11,7 +11,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <body class="w3-light-grey">
 
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:5400px;">
+<div class="w3-content w3-margin-top" style="max-width:1400px">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -29,36 +29,33 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Robotics Graduate Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>University of Maryland-College Park, USA</p>
+          <p><i></i>University of Maryland-College Park</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>College Park, MD, USA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>varunasthana92@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1-(240)-463-9878</p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>C++</p>
+          <p>C++ | Python | Computer Vision | Tensorflow</p>
           <!-- <div class="w3-light-grey w3-round-xlarge w3-small"> -->
             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div> -->
           <!-- </div> -->
-          <p>Python</p>
-          <p>Computer Vision</p>
+          <p>OpenCV | ROS | MATLAB | Siemens NX9</p>
+          
           <!-- <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
               <div class="w3-center w3-text-white">80%</div>
             </div>
           </div> -->
-          <p>Tensorflow</p>
-          <p>ROS</p>
-          <p>OpenCV</p>
+          
           <!-- <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div> -->
-          <p>MATLAB</p>
+          
           <!-- <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div> -->
-          <p>Siemens NX9</p>
-          <p>Teamcenter 10</p>
-          <p>AutoCAD</p>
+          <p>eamcenter 10 | AutoCAD</p>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
@@ -66,13 +63,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
-          <p>Spanish</p>
+          <p>Hindi</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
           <br>
         </div>
