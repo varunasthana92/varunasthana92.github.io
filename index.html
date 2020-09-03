@@ -25,14 +25,17 @@
 
   <!-- Sidebar/menu -->
   <!-- <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="display:none;z-index:3;width:20%;min-width:300px;" id="mySidebar"><br> -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-    <div class="w3-container w3-black">
-      <img src="/images/profile_3.png" style="width:25%;" class="w3-round"><br><br>
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-xlarge w3-animate-left" style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <spam><img src="/images/profile_3.png" style="width:100%;" class="w3-round"></spam><br><br>
       <h4><b>PORTFOLIO</b></h4>
       <p class="w3-text-grey">Varun Asthana</p>
     </div>
     <div class="w3-bar-block">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-remove fa-fw w3-margin-right"></i>Close Menu</a>
       <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
@@ -72,10 +75,10 @@
 
 
 <!-- Page Container -->
-<div class="w3-main w3-content w3-padding" style="max-width:1400px;margin-top:100px">
+<div class="w3-main w3-content w3-padding" id="projects" style="max-width:1400px;margin-top:100px">
 <!-- <div class="w3-content w3-margin-top" style="max-width:1400px"> -->
 
-  <div class="w3-container w3-white w3-card-4 w3-center" id="projects" style="margin-bottom:32px">
+  <div class="w3-container w3-white w3-card-4 w3-center" style="margin-bottom:32px">
     <h3>Projects</h3><br>
     <!-- First Project Grid-->
     <div class="w3-third w3-container w3-margin-bottom">
