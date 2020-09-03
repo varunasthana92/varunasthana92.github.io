@@ -10,128 +10,37 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <style>
   html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-  .w3-bar-block .w3-bar-item {padding:20px}
-  a:link {color: blue; background-color: transparent; text-decoration: none;}
-  a:visited {color: blue; background-color: transparent; text-decoration: none;}
-  a:hover {color: red; background-color: transparent; text-decoration: underline;}
-  a:active {color: yellow; background-color: transparent; text-decoration: underline;}
-  img {display: block; margin-left: auto; margin-right: auto;}
+  a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 </style>
 <body class="w3-light-grey">
-  <!-- Sidebar (hidden by default) -->
-  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-    class="w3-bar-item w3-button">Close Menu</a>
-    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
-    <a href="#edu" onclick="w3_close()" class="w3-bar-item w3-button">Education</a>
-    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Work Experience</a>
-  </nav>
-
-  <!-- Top menu -->
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-      <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-      <div class="w3-right w3-padding-16">Contact</div>
-      <div class="w3-center w3-padding-16">Varun Asthana</div>
-    </div>
-  </div>
-
-
 
 <!-- Page Container -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-<!-- <div class="w3-content w3-margin-top" style="max-width:1400px"> -->
-  
-  <!-- <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container"> -->
-
-  <div class="w3-container w3-white w3-card-4 w3-padding-32 w3-center" id="projects" style="margin-bottom:32px">
-    <h3>Projects</h3><br>
-    <!-- First Project Grid-->
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" target="_blank">
-        <img src="/images/freeway.jpg" alt="Yolo" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" title="Go to project" target="_blank">
-          <h3>Object Detection: YOLOv3 TF2</h3>
-        </a>
-        <p>YOLO is used for multiple object detection in a colored image. YOLOv3 detection is implemented using pre-trained weights.</p>
-      </div>
-    </div>
-
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
-        <img src="/images/freeway.jpg" alt="Yolo" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
-          <h3>Lane Detection</h3>
-        </a>
-        <p>Objective of the project is to detect the current drive lane. Sliding window technique used.</p>
-      </div>
-    </div>
-
-    <div class="w3-third w3-container w3-margin-bottom">
-      <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
-        <img src="/images/freeway.jpg" alt="Yolo" style="width:100%" class="w3-hover-opacity">
-      </a>
-      <div class="w3-container w3-white">
-        <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
-          <h3>Lane Detection</h3>
-        </a>
-        <p>Objective of the project is to detect the current drive lane. Sliding window technique used.</p>
-      </div>
-    </div>
-
-  </div>
-
-    <!-- <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-
-        <div class="w3-container">
-          <div class="w3-row">
-            <div class="w3-half">
-              <br>
-              <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" target="_blank">
-                <img src="/images/freeway.jpg" style="width:300px;height: 180px; vertical-align: middle">
-              </a> 
-            </div>
-            <div class="w3-half">
-              <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" title="Go to project" target="_blank">
-                <h3>Object Detection: YOLOv3 TF2</h3>
-              </a>
-              <p class="w3-text-grey">YOLO is used for multiple object detection in a colored image. Version-3 supports detection of 80 different objects. In this project, YOLOv3 detection is implemented using pre-trained weights. YOLO utilizes anchor box priors to reduce false positive. For more robustness, 3 predictions are given across 3 scales. Non-maximum-suppression is used to filter the results.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w3-container">
-          <div class="w3-row">
-            <div class="w3-half">
-              <br>
-              <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
-                <img src="/images/lane_detection.jpg" style="width:300px;height: 135px; vertical-align: middle">
-              </a> 
-            </div>
-            <div class="w3-half">
-              <a href="https://github.com/varunasthana92/Lane_Detection" title="Go to project" target="_blank">
-                <h3>Lane Detection</h3>
-              </a>
-              <p class="w3-text-grey">Objective of the project is to detect the current drive lane on the given data set (a video). Color segmentation done to generate a binary image. Sliding window used along the height of the image to detect all the points of left and right lanes.</p>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
-       end of projects 
-  </div> -->
-  <!-- end outter row padding -->
-  <!-- End top half page Grid -->
-  
-
-
+<div class="w3-content w3-margin-top" style="max-width:1400px">
 
   <!-- The top half page Grid -->
   <div class="w3-row-padding">
@@ -293,6 +202,57 @@
 
   <!-- The top half page Grid -->
   <!-- begin outter row paddin -->
+  <div class="w3-row-padding">
+    <!-- begin inner row padding -->
+    <div class="w3-row-padding">
+
+      <!-- project listing-->
+      <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+
+          <div class="w3-container">
+            <div class="w3-row">
+              <div class="w3-half">
+                <br>
+                <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" target="_blank">
+                  <img src="/images/freeway.jpg" style="width:300px;height: 180px; vertical-align: middle">
+                </a> 
+              </div>
+              <div class="w3-half">
+                <a href="https://github.com/varunasthana92/YOLO_v3_implementation_Tensorflow2" title="Go to project" target="_blank">
+                  <h3>Object Detection: YOLOv3 TF2</h3>
+                </a>
+                <p class="w3-text-grey">YOLO is used for multiple object detection in a colored image. Version-3 supports detection of 80 different objects. In this project, YOLOv3 detection is implemented using pre-trained weights. YOLO utilizes anchor box priors to reduce false positive. For more robustness, 3 predictions are given across 3 scales. Non-maximum-suppression is used to filter the results.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-container">
+            <div class="w3-row">
+              <div class="w3-half">
+                <br>
+                <a href="https://github.com/varunasthana92/Lane_Detection" target="_blank">
+                  <img src="/images/lane_detection.jpg" style="width:300px;height: 135px; vertical-align: middle">
+                </a> 
+              </div>
+              <div class="w3-half">
+                <a href="https://github.com/varunasthana92/Lane_Detection" title="Go to project" target="_blank">
+                  <h3>Lane Detection</h3>
+                </a>
+                <p class="w3-text-grey">Objective of the project is to detect the current drive lane on the given data set (a video). Color segmentation done to generate a binary image. Sliding window used along the height of the image to detect all the points of left and right lanes.</p>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of projects -->
+
+      </div>
+      <!-- end inner row padding -->
+  
+  </div>
+  <!-- end outter row padding -->
+  <!-- End top half page Grid -->
   
 <!-- End Page Container -->
 </div>
