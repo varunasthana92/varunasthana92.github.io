@@ -35,7 +35,7 @@
   <nav class="w3-sidebar w3-bar-block w3-card w3-xlarge w3-animate-left" style="display:none;z-index:3;width:400px" id="mySidebar">
     <div class="w3-bar-block">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-remove fa-fw w3-margin-right"></i>Close Menu</a>
-      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+      <a href="#projects" onclick="w3_close1('projects')" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     </div>
@@ -363,13 +363,18 @@
 function w3_open() {
   var x = document.getElementById("mySidebar")
   x.style.display = "block";
-  x.style.margin = "100px 0px 0px 0px";
 }
  
+function w3_close1(header) {
+  var x = document.getElementById("mySidebar");
+  x.style.display = "none";
+  var y = document.getElementById(header);
+  y.style.margin = "500px 0px 0px 0px";
+}
+
 function w3_close() {
   var x = document.getElementById("mySidebar");
   x.style.display = "none";
-  x.style.margin = "200px 0px 0px 0px";
 }
 </script>
 
