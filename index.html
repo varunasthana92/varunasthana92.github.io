@@ -16,6 +16,13 @@
   a:hover {color: red; background-color: transparent; text-decoration: underline;}
   a:active {color: yellow; background-color: transparent; text-decoration: underline;}
   img {display: block; margin-left: auto; margin-right: auto;}
+
+  div.relative {
+  position: relative;
+  top: 50px;
+  /*  border: 3px solid #73AD21;*/
+  }
+
 </style>
 <body class="w3-light-grey">
 
@@ -356,11 +363,13 @@
 function w3_open() {
   var x = document.getElementById("mySidebar")
   x.style.display = "block";
-  x.style.margin = "700px 0px 0px 0px";
+  x.style.margin = "100px 0px 0px 0px";
 }
  
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+  var x = document.getElementById("mySidebar");
+  x.style.display = "none";
+  x.style.margin = "200px 0px 0px 0px";
 }
 </script>
 
