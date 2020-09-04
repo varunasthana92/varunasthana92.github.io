@@ -38,6 +38,7 @@
       <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT ME</a> 
       <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>PROJECTS</a> 
       <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fas fa-user-graduate fa-fw w3-margin-right"></i>EDUCATION</a> 
+      <a href="#workEx" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-suitcase fa-fw w3-margin-right"></i>WORK EXPERIENCE</a> 
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     </div>
     
@@ -187,9 +188,14 @@
 <!-- begin projects -->
 <!-- <div class="w3-container w3-padding"  style="max-width:1400px;margin-top:5px"> -->
 <!-- <div class="w3-content w3-margin-top" style="max-width:1400px"> -->
-  <div class="w3-container">
+<!--   <div class="w3-container">
   <div class="w3-container w3-card w3-white w3-margin-bottom">
-    <h2 class="w3-text-grey w3-padding-6" id="projects"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>  
+    <h2 class="w3-text-grey w3-padding-6" id="projects"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>   -->
+
+
+  <div class="w3-container">
+  <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4" id="education" style="margin-bottom:32px">
+      <h2 class="w3-text-grey w3-padding-6" id="education"><i class="fas fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
 
 
   <!-- <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4 w3-center" id="projects" style="margin-bottom:32px">
@@ -284,7 +290,7 @@
 
 
   <!-- begin education -->
-  <div class="w3-container">
+  <div class="w3-half w3-container">
     <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4" id="education" style="margin-bottom:32px">
       <h2 class="w3-text-grey w3-padding-6" id="education"><i class="fas fa-user-graduate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
       <div class="w3-container">
@@ -304,6 +310,40 @@
       <!-- end education -->
   </div>
   <!-- end edcation container -->
+
+  <!-- begin work-experience -->
+  <div class="w3-half w3-container">
+    <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4" id="education" style="margin-bottom:32px">
+      <h2 class="w3-text-grey w3-padding-6" id="workEx"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+      <!-- begin bajaj container -->
+      <div class="w3-container">
+          <h5 class="w3-opacity"><b>Bajaj Auto Ltd, Pune (India)</b></h5>
+          <p class="w3-text-grey">
+          Assistant Manager-Componenet Development  / Apr 2017 - Jul 2019<br>
+          Senior Engineer-Componenet Development    / May 2016 - Mar 2017<br>
+          Senior Engineer-Service (Commercial Vehicles) / Jul 2014 - Apr 2016</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2014 - Jul 2019</h6>
+          <p>
+            <ul class="w3-text-grey">
+            <li>Managed a team of 50+ people at 7 Tier-1 vendors and multiple Tier-2 vendors to manufacture exhaust systems..</li>
+            <li>Executed projects from design stage to market launch leading to launch of 20+ products in domestic and international markets.</li>
+            <li>Extensive experience of robotic production line set-up.</li>
+            <li>Allocated and prioritized resources among vendor teams for parallel execution of different projects.</li>
+            <li>Provided design for manufacturability comments to R&D team.</li>
+            <li>Lead a team of 5 for designing robotic weld fixtures and for production line layout finalization.</li>
+            <li>Expanded vendor base for cost-effective manufacturing. Developed standard cost estimation model for fixtures and gauges.</li>
+            <li>Defined manufacturing process for each sub-assembly part of exhaust systems.</li>
+            <li>Special Marketing Project: ​Maxima Power Challenge. The project resulted in a 3% gain of market share in a year.</li>
+            <li>Conceptualized and implemented 2 hours service module for commercial vehicles, improving the previous time by 3 hours.</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+        <!-- end Bajaj container -->
+      </div>
+      <!-- end work-ex -->
+    </div>
+    <!-- end work-ex container -->
 
 
 
@@ -495,6 +535,7 @@
 function w3_open() {
   var x = document.getElementById("mySidebar")
   x.style.display = "block";
+  x.style.margin
 }
 
 function w3_close() {
