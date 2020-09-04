@@ -86,7 +86,7 @@
 <!-- Page Container -->
 
 <!-- begin projects -->
-<div class="relative w3-main w3-content w3-padding" id="projects" style="max-width:1400px;margin-top:100px">
+<div class="w3-main w3-content w3-padding" id="projects" style="max-width:1400px;margin-top:100px">
 <!-- <div class="w3-content w3-margin-top" style="max-width:1400px"> -->
   <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4 w3-center" style="margin-bottom:32px">
     <h3>Projects</h3><br>
@@ -361,7 +361,9 @@
 <script>
 // Script to open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+  var x = document.getElementById("mySidebar")
+  x.style.display = "block";
+  x.style.margin = "200px 0px 0px 0px";
 }
  
 function w3_close() {
