@@ -35,7 +35,11 @@
   <nav class="w3-sidebar w3-bar-block w3-card w3-xlarge w3-animate-left" style="display:none;z-index:3;width:400px" id="mySidebar">
     <div class="w3-bar-block">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-text-teal"><i class="fa fa-remove fa-fw w3-margin-right"></i>Close Menu</a>
-      <a href="#projects" onclick="w3_close('projects')" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+      <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PROJECTS</a> 
+
+      
+      <a href="#" onclick="onLinkClick('high')" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>proj</a> 
+
       <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     </div>
@@ -86,9 +90,9 @@
 <!-- Page Container -->
 
 <!-- begin projects -->
-<div class="w3-main w3-content w3-padding" id="projects" style="max-width:1400px;margin-top:100px">
+<div class="w3-main w3-content w3-padding" style="max-width:1400px;margin-top:100px">
 <!-- <div class="w3-content w3-margin-top" style="max-width:1400px"> -->
-  <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4 w3-center" style="margin-bottom:32px">
+  <div class="w3-container w3-white w3-padding-32 w3-row-padding w3-card-4 w3-center" id="projects" style="margin-bottom:32px">
     <h3>Projects</h3><br>
     <!-- First Project row-->
     <div class="w3-container">
@@ -245,7 +249,7 @@
     <div class="w3-twothird">
       
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-bars fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Highlights</h2>
+        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-bars fa-fw w3-margin-right w3-xxlarge w3-text-teal"id="high"></i>Highlights</h2>
         <div class="w3-container">
           <p>
             <ul class="w3-text-grey">
@@ -368,11 +372,17 @@ function w3_open() {
 function w3_close() {
   var x = document.getElementById("mySidebar");
   x.style.display = "none";
-  scrollWin()
+  
 }
 
 function scrollWin() {
-  window.scrollBy(0, 2000);
+  window.scrollTo(0, 20000);
+}
+
+function onLinkClick(id) {
+  w3_close()
+  document.getElementsById("high").scrollIntoView();
+  // will scroll to 4th h3 element
 }
 </script>
 
