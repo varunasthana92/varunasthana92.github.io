@@ -81,44 +81,21 @@ function includeHTML() {
 </script> -->
 
 <div class="tab">
-  <button class="tablinks" onclick="openProject(event, 'All')">Test3</button>
-  <button class="tablinks" onclick="openProject(event, 'Paris')">Test3</button>
-  <button class="tablinks" onclick="openProject(event, 'Tokyo')">Test3</button>
+  <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">All Projects</button>
+  <button class="tablinks" onclick="openProject(event, 'Paris')">Planning</button>
+  <button class="tablinks" onclick="openProject(event, 'Tokyo')">Tokyo</button>
 </div>
 
 <div id="All" class="tabcontent">
-  <!-- <div w3-include-html="../layout/projects.html"></div> -->
   <h3>Paris</h3>
   <p>Paris is the capital of France.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
+  <div w3-include-html="../layout/projects.html"></div>
 </div>
 
 <div id="Tokyo" class="tabcontent">
-  <h3>Perception</h3>
+  <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
-
-<script>
-function openProject(evt, category) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(category).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// document.getElementById("defaultOpen").click();
-</script>
-
-<!-- <script>
-includeHTML();
-</script> -->
