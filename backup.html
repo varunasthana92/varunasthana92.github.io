@@ -19,18 +19,6 @@
 
     gtag('config', 'UA-180794530-1');
   </script>
-
-  <!-- <script src="jquery.js"></script> 
-  <script> 
-    $(function () {
-      var includes = $('[data-include]')
-      $.each(includes, function () {
-        var file = $(this).data('include') + '.html'
-        $(this).load(file)
-      })
-    });
-  </script> -->
-
 </head>
 <style>
   html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
@@ -45,38 +33,6 @@
     tab-size: 4;
   }
 </style>
-
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-
-
 <body class="w3-light-grey">
 
   <nav class="w3-sidebar w3-bar-block w3-card w3-xlarge w3-animate-right" style="display:none;z-index:3; right:0; width:300px; margin-top: 5px" id="mySidebar">
@@ -284,8 +240,7 @@ function includeHTML() {
         </div>
 
         <!-- fourth element -->
-        <div w3-include-html="test.html"></div> 
-        <!-- <div class="w3-quarter w3-container w3-margin-bottom">
+        <div class="w3-quarter w3-container w3-margin-bottom">
           <a href="https://github.com/varunasthana92/AR-Tag-Detetction" target="_blank">
             <img src="/images/tag_detect.gif" alt="AR-Tag Detect" style="width:100%; height: 150px; vertical-align: middle" class="w3-hover-opacity">
           </a>
@@ -297,7 +252,7 @@ function includeHTML() {
             <a href="https://github.com/varunasthana92/AR-Tag-Detetction" target="_blank" class="w3-text-teal">Go to project</a>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- end first row -->
 
       <!-- begin second row -->
@@ -502,10 +457,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
   
 }
-</script>
-
-<script>
-includeHTML();
 </script>
 
 </body>
