@@ -20,7 +20,7 @@
     gtag('config', 'UA-180794530-1');
   </script>
 
-  <!-- <script src="jquery.js"></script> 
+  <script src="jquery.js"></script> 
   <script> 
     $(function () {
       var includes = $('[data-include]')
@@ -29,7 +29,7 @@
         $(this).load(file)
       })
     });
-  </script> -->
+  </script>
 
 </head>
 <style>
@@ -46,7 +46,7 @@
   }
 </style>
 
-<script>
+<!-- <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -74,7 +74,7 @@ function includeHTML() {
     }
   }
 };
-</script>
+</script> -->
 
 
 <body class="w3-light-grey">
@@ -284,7 +284,8 @@ function includeHTML() {
         </div>
 
         <!-- fourth element -->
-        <div w3-include-html="test.html"></div> 
+        <!-- <div w3-include-html="test.html"></div>  -->
+        <div data-include="test"></div>
         <!-- <div class="w3-quarter w3-container w3-margin-bottom">
           <a href="https://github.com/varunasthana92/AR-Tag-Detetction" target="_blank">
             <img src="/images/tag_detect.gif" alt="AR-Tag Detect" style="width:100%; height: 150px; vertical-align: middle" class="w3-hover-opacity">
