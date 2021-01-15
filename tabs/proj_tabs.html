@@ -50,7 +50,7 @@ body {font-family: Arial;}
 }
 </style>
 
-<script>
+<!-- <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -78,7 +78,7 @@ function includeHTML() {
     }
   }
 };
-</script>
+</script> -->
 
 <div class="tab">
   <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">All Projects</button>
@@ -88,8 +88,7 @@ function includeHTML() {
 
 <div id="All" class="tabcontent">
   <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-  
+  <p>Paris is the capital of France.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
@@ -100,24 +99,3 @@ function includeHTML() {
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
-
-
-
-
-<script>
-function openProject(evt, category) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(category).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("defaultOpen").click();
-</script>
