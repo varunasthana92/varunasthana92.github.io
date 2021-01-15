@@ -115,110 +115,26 @@
 
 <!-- Page Container -->
 <div class="w3-main w3-container w3-content w3-padding" style="max-width:1400px;margin-top:5px">
-  <!-- begin intro container -->
+  <!-- Profile -->
   <div class="w3-row-padding w3-margin-bottom">
-    <!-- begin left column -->
     <div class="w3-third w3-margin-bottom" id="contact">
-      <!-- begin one-third container -->
       <div w3-include-html="layout/profile_left_column.html"></div>
     </div>
-    <!-- End Left Column -->
-
-    <!-- begin two-third -->
     <div class="w3-twothird w3-margin-bottom"id="aboutme">
-      <!-- begin about me container -->
-      <div class="w3-container w3-white w3-padding w3-card-4">
-        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
-
-        <div class="w3-display-container">
-          <img src="/images/profile_3.png" class="w3-circle" style="height:160px;width:160px" alt="Avatar">
-        </div>
-
-        <div class="w3-container w3-text-grey w3-center">
-          <p>
-            I am a Robotics graduate student at the University of Maryland-College Park with a GPA 4.0<br>
-            Completed my under-gradaution in Mechanical Engineering in 2014<br>
-            5 years of work experience in the automobile industry
-          </p>
-          
-          <p>
-            I am proficient with C++, Python, TensorFlow, and ROS. I can deliver projects related to automation and vision.
-          </p>
-          
-          <p>
-            I am always ready to walk an extra mile to achieve the end result<br>
-            Earned several performance accolades both in academics and in professional setup
-          </p>
-          <br>
-        </div>
-      </div>
-      <!-- end of about me container -->
+      <div w3-include-html="layout/profile_right_column.html"></div>
     </div>
-    <!-- end of two-third -->
   </div>
-  <!-- end of intro container -->
+  <!-- end of Profile container -->
+
+  <!-- Research -->
   <div class="w3-container w3-margin-bottom" id="labwork">
-    <div class="w3-container w3-white w3-card-4">
-      <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research</h2>
-
-      <div class="w3-container">
-        <!-- UMD LAB WORK -->
-        <div class="w3-container">
-          <h3 class="w3-text-grey w3-padding-6">Perception and Robotics Group, University of Maryland-College Park</h3>
-        </div>
-        <!-- variable baseline element -->
-        <div class="w3-third w3-container w3-margin-bottom">
-           <iframe src="https://www.youtube.com/embed/0G5iIF0pAlg" width="420px" height="236px"  frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- end of 2/3rd container for <video src=""></video> -->
-        <div class="w3-twothird w3-container w3-margin-bottom">
-          <div class="w3-container w3-white w3-text-grey">
-          <a href="http://prg.cs.umd.edu/MorphEyes" title="Go to project" target="_blank">
-              <h3>MorphEyes: Variable Baseline Stereo For Quadrotor Navigation</h3>
-            </a>
-            <p>Morphable design and depth-based visual control are two upcoming trends leading to advancements in the field of quadrotor autonomy. In this paper, a framework for quadrotor navigation is presented based on a stereo camera system whose baseline can be adapted on-the-fly.</p>
-            <a href="http://prg.cs.umd.edu/MorphEyes" target="_blank" class="w3-text-teal">Go to project</a>
-          </div>
-        </div>
-        <!-- end of variable baseline -->
-        <!-- end of UMD lab work -->
-      </div>
-
-    </div>
+    <div w3-include-html="layout/research.html"></div>
   </div>
+  <!-- end of Research container -->
 
-
-
+  <!-- Projects container -->
   <div class="w3-container w3-margin-bottom" id="projects">
-    <div class="w3-container w3-white w3-card-4">
-      <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-      <!-- First Project row-->
-      <div class="w3-container">
-        <div w3-include-html="projects/yolo.html"></div>
-        <div w3-include-html="projects/lane_detection.html"></div>
-        <div w3-include-html="projects/face_swap.html"></div>
-        <div w3-include-html="projects/ar_tag.html"></div>
-      </div>
-      <!-- end first row -->
-
-      <!-- begin second row -->
-      <div class="w3-container">
-        <div w3-include-html="projects/kuka_ik.html"></div>
-        <div w3-include-html="projects/obj_anomoly.html"></div>
-        <div w3-include-html="projects/dijstra.html"></div>
-        <div w3-include-html="projects/astar.html"></div>
-      </div>
-      <!-- end second row -->
-
-      <!-- begin third row -->
-      <div class="w3-container">
-        <div w3-include-html="projects/human_detection_openCV.html"></div>
-        <div w3-include-html="projects/auto_calib.html"></div>
-        <div w3-include-html="projects/astar.html"></div>
-      </div>
-      <!-- end third row -->
-    </div>
-    <!-- end projects w-card -->
+    <div w3-include-html="layout/projects.html"></div>
   </div>
   <!-- end projects container -->
 
