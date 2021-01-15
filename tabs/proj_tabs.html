@@ -81,13 +81,15 @@ function includeHTML() {
 </script>
 
 <div class="tab">
-  <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">Back Projects</button>
-  <button class="tablinks" onclick="openProject(event, 'Paris')">Per</button>
-  <button class="tablinks" onclick="openProject(event, 'Tokyo')">Per</button>
+  <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">Pro</button>
+  <button class="tablinks" onclick="openProject(event, 'Paris')">Pro</button>
+  <button class="tablinks" onclick="openProject(event, 'Tokyo')">Pro</button>
 </div>
 
 <div id="All" class="tabcontent">
-  <div w3-include-html="../layout/projects.html"></div>
+  <!-- <div w3-include-html="../layout/projects.html"></div> -->
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
