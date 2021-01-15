@@ -215,7 +215,14 @@ includeHTML();
 </script>
 
 <script>
-document.getElementById("defaultOpen").click();
+window.onload = function () {
+                firstTab();
+            };
+
+function firstTab() {
+    document.getElementById("defaultOpen").click();
+
+}
 </script>
 
 </body>
