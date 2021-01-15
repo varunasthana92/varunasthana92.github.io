@@ -81,7 +81,7 @@ function includeHTML() {
 </script>
 
 <div class="tab">
-  <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">Pro</button>
+  <button class="tablinks" onclick="openProject(event, 'All')" id="defaultOpen">Test</button>
   <button class="tablinks" onclick="openProject(event, 'Paris')">Pro</button>
   <button class="tablinks" onclick="openProject(event, 'Tokyo')">Pro</button>
 </div>
@@ -116,6 +116,7 @@ function openProject(evt, category) {
   document.getElementById(category).style.display = "block";
   evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
 </script>
 
 <script>
